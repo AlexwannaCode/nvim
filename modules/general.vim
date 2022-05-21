@@ -32,7 +32,7 @@ set splitright
 set splitbelow
 set formatoptions-=cro " disable auto comment insertion
 set termguicolors
-set nrformats+=alpha
+set nrformats+=alpha " <c-a> increase alpha
 setlocal omnifunc=syntaxcomplete#Complete
 
 "=== Save User's Undo History
@@ -62,8 +62,7 @@ function! InsertMapForEnter()
     endif
 endfunction
 
-" Have Vim jump to the last position when
-" reopening a file
+" Have Vim jump to the last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif

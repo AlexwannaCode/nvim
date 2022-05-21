@@ -18,7 +18,7 @@ Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-Plug 'RRethy/vim-hexokinase'
+" Plug 'RRethy/vim-hexokinase'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
@@ -96,6 +96,7 @@ let g:minimap_highlight_search	             = 1
 " let g:minimap_git_colors                     = 1
 let g:airline#extensions#coc#show_coc_status = 1 " enable coc status display
 " let g:airline#extensions#tabline#enabled   = 1
+let g:indentLine_char = '│'
 let g:dashboard_default_executive            = 'fzf'
 let g:dashboard_custom_header                = [
 \'    _    _           _____ _____ _____ _____',
